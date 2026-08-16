@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="MedagDev — Portfolio de création numérique, développement web, JavaScript, IA et projets créatifs."
+    />
+
+    <meta name="author" content="MedagDev" />
+
+    <meta name="theme-color" content="#6366f1" />
+
+    <title>MedagDev — Créateur numérique</title>
+    <link rel="icon" href="logo.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header" id="header">
+      <div class="container navbar">
+        <a href="#accueil" class="logo" aria-label="MedagDev - Accueil">
+          <img src="logo.png" alt="logo MedagDev" class="logo-img" />
+          Medag<span>Dev</span>
+        </a>
+
+        <nav class="nav-menu" id="navMenu" aria-label="Navigation principale">
+          <a href="#accueil" class="nav-link active"> Accueil </a>
+
+          <a href="#apropos" class="nav-link"> À propos </a>
+
+          <a href="#competences" class="nav-link"> Compétences </a>
+
+          <a href="#services" class="nav-link"> Services </a>
+
+          <a href="#projets" class="nav-link"> Projets </a>
+
+          <a href="#contact" class="nav-link"> Contact </a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="icon-btn theme-btn"
+            id="themeBtn"
+            type="button"
+            aria-label="Activer le mode sombre"
+            title="Mode sombre"
+          >
+            <i class="fa-solid fa-moon"></i>
+          </button>
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuBtn"
+            type="button"
+            aria-label="Ouvrir le menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+
+      <section class="hero" id="accueil">
+        <div class="hero-bg"></div>
+
+        <div class="container hero-content">
+          <div class="hero-text">
+            <div class="status-badge">
+              <span></span>
+              Créateur numérique & développeur
+            </div>
+
+            <h1>
+              Je transforme les idées
+              <span>en expériences digitales.</span>
+            </h1>
+
+            <p class="hero-description">
+              Je construis des interfaces modernes, des expériences interactives
+              et des projets numériques en combinant développement web,
+              JavaScript, IA et créativité.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projets" class="btn btn-primary">
+                <i class="fa-solid fa-code"></i>
+                Voir mes projets
+              </a>
+
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fa-regular fa-paper-plane"></i>
+                Me contacter
+              </a>
+            </div>
+
+            <div class="socials">
+              <a
+                href="https://wa.me/22383641448"
+                aria-label="WhatsApp"
+                target="_blank"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/mohamed-ag-b20926429"
+                aria-label="LinkedIn"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://github.com/Medag-Dev"
+                aria-label="GitHub"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+
+              <a
+                href="https://discord.gg/aX4UpK92VJ"
+                aria-label="Discord"
+                target="_blank"
+              >
+                <i class="fa-brands fa-discord"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CODE CARD -->
+
+          <div class="hero-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <div class="window-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+
+                <span class="window-title"> medagdev.js </span>
+
+                <span class="window-status"> ● </span>
+              </div>
+
+              <div class="code-content">
+                <p>
+                  <span class="purple">const</span>
+                  <span class="blue"> developer</span> = {
+                </p>
+
+                <p class="indent">
+                  <span class="yellow">name</span>:
+                  <span class="green">"MedagDev"</span>,
+                </p>
+
+                <p class="indent">
+                  <span class="yellow">role</span>:
+                  <span class="green">"Digital Creator"</span>,
+                </p>
+
+                <p class="indent"><span class="yellow">focus</span>: [</p>
+
+                <p class="indent-2">
+                  <span class="green">"Web"</span>,
+                  <span class="green">"JavaScript"</span>,
+                </p>
+
+                <p class="indent-2">
+                  <span class="green">"IA"</span>,
+                  <span class="green">"Automation"</span>,
+                </p>
+
+                <p class="indent-2">
+                  <span class="green">"Creative Tech"</span>
+                </p>
+
+                <p class="indent">],</p>
+
+                <p class="indent">
+                  <span class="yellow">passion</span>:
+                  <span class="green">"Create"</span>
+                </p>
+
+                <p>};</p>
+
+                <p>
+                  <span class="purple">console</span>.
+                  <span class="blue">log</span>(
+                  <span class="green">"Let's build."</span>
+                  );
+                  <span class="cursor"></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= À PROPOS ================= -->
+
+      <section class="section" id="apropos">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"> À PROPOS </span>
+
+            <h2>
+              Un profil polyvalent
+              <span>orienté création.</span>
+            </h2>
+
+            <p>
+              Je m'intéresse à la technologie sous plusieurs angles :
+              développement, intelligence artificielle, design et création
+              numérique.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="glass-card about-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+
+              <h3>Développement</h3>
+
+              <p>
+                Création de sites modernes, interfaces responsives, interactions
+                JavaScript et expériences web.
+              </p>
+
+              <div class="mini-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </article>
+
+            <article class="glass-card about-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+
+              <h3>Intelligence artificielle</h3>
+
+              <p>
+                Exploration de l'IA générative, du prompt engineering, de
+                l'automatisation et des outils intelligents.
+              </p>
+
+              <div class="mini-tags">
+                <span>AI</span>
+                <span>Prompts</span>
+                <span>Automation</span>
+              </div>
+            </article>
+
+            <article class="glass-card about-card">
+              <div class="card-icon">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </div>
+
+              <h3>Création numérique</h3>
+
+              <p>
+                Une approche créative qui mélange code, design, multimédia,
+                expérimentation et technologie.
+              </p>
+
+              <div class="mini-tags">
+                <span>Design</span>
+                <span>3D</span>
+                <span>Creative Tech</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= COMPÉTENCES ================= -->
+
+      <section class="section skills-section" id="competences">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"> COMPÉTENCES </span>
+
+            <h2>
+              Mes compétences
+              <span>techniques & créatives.</span>
+            </h2>
+
+            <p>
+              Un ensemble de technologies et de domaines que j'utilise pour
+              concevoir et expérimenter différents projets.
+            </p>
+          </div>
+
+          <!-- FEATURED SKILLS -->
+
+          <div class="featured-skills">
+            <article class="skill-feature">
+              <div class="skill-feature-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+
+              <div>
+                <span>01</span>
+                <h3>HTML & CSS</h3>
+                <p>
+                  Interfaces modernes, responsive design, animations et
+                  architecture CSS.
+                </p>
+              </div>
+
+              <div class="skill-level">
+                <div class="level-top">
+                  <span>Maîtrise</span>
+                  <strong>90%</strong>
+                </div>
+
+                <div class="level-bar">
+                  <span style="--level: 90%"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="skill-feature">
+              <div class="skill-feature-icon js-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+
+              <div>
+                <span>02</span>
+                <h3>JavaScript</h3>
+                <p>
+                  DOM, événements, interfaces interactives, stockage local et
+                  logique côté navigateur.
+                </p>
+              </div>
+
+              <div class="skill-level">
+                <div class="level-top">
+                  <span>En progression</span>
+                  <strong>82%</strong>
+                </div>
+
+                <div class="level-bar">
+                  <span style="--level: 82%"></span>
+                </div>
+              </div>
+            </article>
+
+            <article class="skill-feature">
+              <div class="skill-feature-icon ai-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+
+              <div>
+                <span>03</span>
+                <h3>IA & Vibe Coding</h3>
+                <p>
+                  Utilisation d'outils IA pour apprendre, prototyper, coder et
+                  automatiser.
+                </p>
+              </div>
+
+              <div class="skill-level">
+                <div class="level-top">
+                  <span>Avancé</span>
+                  <strong>85%</strong>
+                </div>
+
+                <div class="level-bar">
+                  <span style="--level: 85%"></span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- SKILL CATEGORIES -->
+
+          <div class="skills-categories">
+            <article class="skill-category glass-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div>
+                  <h3>Développement web</h3>
+                  <p>Construire des expériences web.</p>
+                </div>
+              </div>
+
+              <div class="technology-list">
+                <span>
+                  <i class="fa-brands fa-html5"></i>
+                  HTML5
+                </span>
+
+                <span>
+                  <i class="fa-brands fa-css3-alt"></i>
+                  CSS3
+                </span>
+
+                <span>
+                  <i class="fa-brands fa-js"></i>
+                  JavaScript
+                </span>
+
+                <span>
+                  <i class="fa-brands fa-git-alt"></i>
+                  Git
+                </span>
+
+                <span>
+                  <i class="fa-brands fa-github"></i>
+                  GitHub
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Responsive
+                </span>
+              </div>
+            </article>
+
+            <article class="skill-category glass-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fa-solid fa-robot"></i>
+                </div>
+
+                <div>
+                  <h3>IA & automatisation</h3>
+                  <p>Créer plus rapidement avec l'IA.</p>
+                </div>
+              </div>
+
+              <div class="technology-list">
+                <span>
+                  <i class="fa-solid fa-brain"></i>
+                  IA générative
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                  Prompt Engineering
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-terminal"></i>
+                  Vibe Coding
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  Automation
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-lightbulb"></i>
+                  Prototypage
+                </span>
+              </div>
+            </article>
+
+            <article class="skill-category glass-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <i class="fa-solid fa-photo-film"></i>
+                </div>
+
+                <div>
+                  <h3>Création multimédia</h3>
+                  <p>Créer du contenu numérique.</p>
+                </div>
+              </div>
+
+              <div class="technology-list">
+                <span>
+                  <i class="fa-solid fa-video"></i>
+                  Vidéo
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-image"></i>
+                  Image
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-music"></i>
+                  Audio
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-cube"></i>
+                  3D
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gamepad"></i>
+                  Game Dev
+                </span>
+              </div>
+            </article>
+          </div>
+
+          <!-- TECHNOLOGY CLOUD -->
+
+          <div class="tech-cloud">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>DOM</span>
+            <span>Responsive Design</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>UI Design</span>
+            <span>AI</span>
+            <span>Prompt Engineering</span>
+            <span>Vibe Coding</span>
+            <span>Automation</span>
+            <span>Game Dev</span>
+            <span>3D</span>
+            <span>Video</span>
+            <span>Audio</span>
+            <span>Creative Tech</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"> SERVICES </span>
+
+            <h2>
+              Ce que je peux
+              <span>créer.</span>
+            </h2>
+
+            <p>
+              Des solutions numériques pensées pour être modernes, accessibles
+              et adaptées aux besoins du projet.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <span class="service-number">01</span>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <h3>Développement web</h3>
+
+              <p>
+                Sites vitrines, portfolios, landing pages et interfaces web
+                responsives.
+              </p>
+
+              <div class="service-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <span class="service-number">02</span>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+
+              <h3>Solutions IA</h3>
+
+              <p>
+                Expérimentation, prototypage, prompting et intégration de
+                l'intelligence artificielle.
+              </p>
+
+              <div class="service-tags">
+                <span>AI</span>
+                <span>Prompts</span>
+                <span>Automation</span>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <span class="service-number">03</span>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-photo-film"></i>
+              </div>
+
+              <h3>Création multimédia</h3>
+
+              <p>
+                Création visuelle, vidéo, audio et contenu numérique pour
+                différents projets.
+              </p>
+
+              <div class="service-tags">
+                <span>Video</span>
+                <span>Image</span>
+                <span>Audio</span>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <span class="service-number">04</span>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-gamepad"></i>
+              </div>
+
+              <h3>Game Development</h3>
+
+              <p>
+                Création d'expériences interactives, gameplay, interfaces et
+                concepts de jeux.
+              </p>
+
+              <div class="service-tags">
+                <span>Game</span>
+                <span>UI</span>
+                <span>3D</span>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <span class="service-number">05</span>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-cube"></i>
+              </div>
+
+              <h3>3D & design</h3>
+
+              <p>
+                Expérimentation autour des objets, environnements et éléments
+                3D.
+              </p>
+
+              <div class="service-tags">
+                <span>3D</span>
+                <span>Assets</span>
+                <span>Design</span>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <span class="service-number">06</span>
+
+              <div class="card-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+
+              <h3>Automatisation</h3>
+
+              <p>
+                Création de workflows et outils pour simplifier certaines tâches
+                numériques.
+              </p>
+
+              <div class="service-tags">
+                <span>Workflow</span>
+                <span>Tools</span>
+                <span>AI</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PROJETS ================= -->
+
+      <section class="section projects-section" id="projets">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"> PROJETS </span>
+
+            <h2>
+              Mes créations
+              <span>& expérimentations.</span>
+            </h2>
+
+            <p>
+              Une sélection de projets qui montrent différentes facettes de mon
+              univers numérique.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-visual project-one">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>WEB</span>
+              </div>
+
+              <div class="project-content">
+                <small>Développement web</small>
+
+                <h3>Portfolio MedagDev</h3>
+
+                <p>
+                  Portfolio moderne avec thème sombre, animations et interface
+                  responsive.
+                </p>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <a href="#" class="project-link">
+                  Voir le projet
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual project-two">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI</span>
+              </div>
+
+              <div class="project-content">
+                <small>Intelligence artificielle</small>
+
+                <h3>AI Creative Lab</h3>
+
+                <p>
+                  Expérimentations autour de l'IA, du prompting et du
+                  développement assisté.
+                </p>
+
+                <div class="project-tags">
+                  <span>AI</span>
+                  <span>Prompt</span>
+                  <span>Automation</span>
+                </div>
+
+                <a href="#" class="project-link">
+                  Voir le projet
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-visual project-three">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>GAME</span>
+              </div>
+
+              <div class="project-content">
+                <small>Game Development</small>
+
+                <h3>Interactive Game</h3>
+
+                <p>
+                  Concept de jeu combinant gameplay, design et éléments
+                  interactifs.
+                </p>
+
+                <div class="project-tags">
+                  <span>Game</span>
+                  <span>3D</span>
+                  <span>Design</span>
+                </div>
+
+                <a href="#" class="project-link">
+                  Voir le projet
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-container">
+          <div class="contact-info">
+            <span class="section-label"> CONTACT </span>
+
+            <h2>
+              Un projet ?
+              <span>Construisons-le ensemble.</span>
+            </h2>
+
+            <p>
+              Une idée de site, une expérience web, un projet IA ou une création
+              numérique ? Parlons-en.
+            </p>
+
+            <div class="contact-details">
+              <a href="mailto:medagdev@outlook.com" class="contact-item">
+                <div class="contact-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+
+                <div>
+                  <small>Email</small>
+                  <strong>medagdev@outook.com</strong>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="input-group">
+                <label for="name"> Nom </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Votre nom"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <label for="email"> Email </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="votre@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="subject"> Sujet </label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Sujet du projet"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="message"> Message </label>
+
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Décrivez votre projet..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              <i class="fa-regular fa-paper-plane"></i>
+
+              Envoyer le message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <a href="#accueil" class="logo"> Medag<span>Dev</span> </a>
+
+          <p>Création numérique & technologie.</p>
+        </div>
+
+        <div class="footer-socials">
+          <a
+            href="https://wa.me/22383641448"
+            aria-label="WhatsApp"
+            target="_blank"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/mohamed-ag-b20926429"
+            aria-label="LinkedIn"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://github.com/Medag-Dev"
+            aria-label="GitHub"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://discord.gg/aX4UpK92VJ"
+            aria-label="Discord"
+            target="_blank"
+          >
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 MedagDev — Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <button
+      class="back-top"
+      id="backTop"
+      type="button"
+      aria-label="Retour en haut"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
