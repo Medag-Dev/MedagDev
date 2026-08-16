@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("main section");
 
   /* =========================================================
-       DARK MODE
-       ========================================================= */
+     DARK MODE
+     ========================================================= */
 
   function updateThemeIcon() {
     if (!themeBtn) return;
@@ -74,8 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================================
-       MOBILE MENU
-       ========================================================= */
+     MOBILE MENU
+     ========================================================= */
 
   function closeMenu() {
     if (!navMenu) return;
@@ -138,8 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================================
-       BACK TO TOP
-       ========================================================= */
+     BACK TO TOP
+     ========================================================= */
 
   function updateBackTop() {
     if (!backTop) return;
@@ -165,8 +165,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================================
-       ACTIVE NAVIGATION
-       ========================================================= */
+     ACTIVE NAVIGATION
+     ========================================================= */
+
   function updateActiveLink() {
     const scrollPosition = window.scrollY + 200;
 
@@ -200,8 +201,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================================
-       SMOOTH ANCHORS
-       ========================================================= */
+     SMOOTH ANCHORS
+     ========================================================= */
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener("click", (event) => {
@@ -225,19 +226,17 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================================
-       SCROLL REVEAL
-       ========================================================= */
+     SCROLL REVEAL
+     ========================================================= */
 
-  const animatedElements = document.querySelectorAll(
-    `
-            .about-card,
-            .skill-feature,
-            .skill-category,
-            .service-card,
-            .project-card,
-            .contact-container
-            `,
-  );
+  const animatedElements = document.querySelectorAll(`
+      .about-card,
+      .skill-feature,
+      .skill-category,
+      .service-card,
+      .project-card,
+      .contact-container
+    `);
 
   animatedElements.forEach((element) => {
     element.style.opacity = "0";
@@ -278,8 +277,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* =========================================================
-       CONTACT FORM
-       ========================================================= */
+     CONTACT FORM
+     ========================================================= */
 
   if (contactForm) {
     contactForm.addEventListener("submit", (event) => {
@@ -293,13 +292,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const messageInput = document.getElementById("message");
 
-      const name = nameInput?.value.trim();
+      if (!nameInput || !emailInput || !subjectInput || !messageInput) {
+        alert("Une erreur est survenue avec le formulaire.");
 
-      const email = emailInput?.value.trim();
+        return;
+      }
 
-      const subject = subjectInput?.value.trim();
+      const name = nameInput.value.trim();
 
-      const message = messageInput?.value.trim();
+      const email = emailInput.value.trim();
+
+      const subject = subjectInput.value.trim();
+
+      const message = messageInput.value.trim();
+
+      /* Vérification des champs */
 
       if (!name || !email || !subject || !message) {
         alert("Veuillez remplir tous les champs.");
@@ -307,7 +314,9 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      if (emailInput && !emailInput.checkValidity()) {
+      /* Vérification de l'e-mail */
+
+      if (!emailInput.checkValidity()) {
         alert("Veuillez entrer une adresse e-mail valide.");
 
         emailInput.focus();
@@ -315,15 +324,29 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      alert(`Merci ${name} ! Votre message est prêt à être envoyé.`);
+      /* =====================================================
+           PREPARATION DE L'EMAIL
+           ===================================================== */
 
-      contactForm.reset();
+      const emailBody =
+        `Nom : ${name}\n` + `Email : ${email}\n\n` + `Message :\n${message}`;
+
+      /* =====================================================
+           OUVERTURE DE LA BOITE MAIL
+           ===================================================== */
+
+      const mailto =
+        `mailto:medagdev@outlook.com` +
+        `?subject=${encodeURIComponent(subject)}` +
+        `&body=${encodeURIComponent(emailBody)}`;
+
+      window.location.href = mailto;
     });
   }
 
   /* =========================================================
-       RESIZE
-       ========================================================= */
+     RESIZE
+     ========================================================= */
 
   window.addEventListener("resize", () => {
     if (window.innerWidth > 700) {
@@ -332,8 +355,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================================
-       REDUCED MOTION
-       ========================================================= */
+     REDUCED MOTION
+     ========================================================= */
 
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
